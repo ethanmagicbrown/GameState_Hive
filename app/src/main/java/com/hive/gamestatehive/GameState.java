@@ -65,6 +65,16 @@ public class GameState implements View.OnClickListener {
         this.Board = orig.Board;
     }
 
+    @Override
+    public String toString() {
+        return "HiveState{"
+                + "turn=" + turnNumber
+                + ", activePlayer=" + activePlayer
+                + ", beePlaced=" + java.util.Arrays.toString(isBeePlaced)
+                + ", WhitesHand=" + WhitesHand
+                + ", BlacksHand=" + BlacksHand
+                + "}";
+    }
 
 
 }
