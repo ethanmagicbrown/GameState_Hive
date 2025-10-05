@@ -1,5 +1,15 @@
 package com.hive.gamestatehive;
 
 public class Hex {
-    int Hextype; // 1 = bee, 2 = ant, 3 = grasshopper, 4 = spider, 5 = beetle
+    public enum Color {WHITE, BLACK}
+    private Color color;
+
+    public Hex(Color color) {
+        this.color = color;
+    }
+
+    public Color getColor() {
+        return color;
+    }
 }
+

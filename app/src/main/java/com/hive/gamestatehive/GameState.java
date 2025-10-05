@@ -19,10 +19,37 @@ public class GameState implements View.OnClickListener {
         turnNumber=1;
         WhitesHand = new ArrayList<>();
         BlacksHand = new ArrayList<>();
+        initializeHands();
         Board = new ArrayList<>();
+
     }
+    private void initializeHands() {
+        // Add white pieces to WhitesHand
+        WhitesHand.add(new QueenBee(Hex.Color.WHITE));
+        WhitesHand.add(new Beetle(Hex.Color.WHITE));
+        WhitesHand.add(new Beetle(Hex.Color.WHITE));
+        WhitesHand.add(new Spider(Hex.Color.WHITE));
+        WhitesHand.add(new Spider(Hex.Color.WHITE));
+        WhitesHand.add(new Ant(Hex.Color.WHITE));
+        WhitesHand.add(new Ant(Hex.Color.WHITE));
+        WhitesHand.add(new Ant(Hex.Color.WHITE));
+        WhitesHand.add(new Grasshopper(Hex.Color.WHITE));
+        WhitesHand.add(new Grasshopper(Hex.Color.WHITE));
+        WhitesHand.add(new Grasshopper(Hex.Color.WHITE));
 
-
+        // Add black pieces to BlacksHand
+        BlacksHand.add(new QueenBee(Hex.Color.BLACK));
+        BlacksHand.add(new Beetle(Hex.Color.BLACK));
+        BlacksHand.add(new Beetle(Hex.Color.BLACK));
+        BlacksHand.add(new Spider(Hex.Color.BLACK));
+        BlacksHand.add(new Spider(Hex.Color.BLACK));
+        BlacksHand.add(new Ant(Hex.Color.BLACK));
+        BlacksHand.add(new Ant(Hex.Color.BLACK));
+        BlacksHand.add(new Ant(Hex.Color.BLACK));
+        BlacksHand.add(new Grasshopper(Hex.Color.BLACK));
+        BlacksHand.add(new Grasshopper(Hex.Color.BLACK));
+        BlacksHand.add(new Grasshopper(Hex.Color.BLACK));
+    }
     @Override
     public void onClick(View v) {
 
