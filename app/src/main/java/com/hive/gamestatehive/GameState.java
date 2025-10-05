@@ -19,4 +19,16 @@ public class GameState {
         BlacksHand = new ArrayList<>();
         Board = new ArrayList<>();
     }
+    //deep copy constructor
+    public GameState(GameState orig){
+        this.activePlayer = orig.activePlayer;
+        this.isBeePlaced[0] = orig.isBeePlaced[0];
+        this.isBeePlaced[1] = orig.isBeePlaced[1];
+        this.turnNumber = orig.turnNumber;
+        this.WhitesHand = orig.WhitesHand;
+        this.BlacksHand = orig.BlacksHand;
+        this.Board = orig.Board;
+    }
+
+
 }
