@@ -1,8 +1,10 @@
 package com.hive.gamestatehive;
 
+import android.view.View;
+
 import java.util.ArrayList;
 
-public class GameState {
+public class GameState implements View.OnClickListener {
     int activePlayer; //1 for White player, 2 for Black Player
     boolean[] isBeePlaced = new boolean[2];//move new to constructor
     int turnNumber;
@@ -19,6 +21,12 @@ public class GameState {
         BlacksHand = new ArrayList<>();
         Board = new ArrayList<>();
     }
+
+
+    @Override
+    public void onClick(View v) {
+
+    }
     //deep copy constructor
     public GameState(GameState orig){
         this.activePlayer = orig.activePlayer;
@@ -29,6 +37,7 @@ public class GameState {
         this.BlacksHand = orig.BlacksHand;
         this.Board = orig.Board;
     }
+
 
 
 }
