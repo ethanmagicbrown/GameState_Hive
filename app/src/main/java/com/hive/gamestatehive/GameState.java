@@ -9,4 +9,14 @@ public class GameState {
     ArrayList<Hex> WhitesHand;
     ArrayList<Hex> BlacksHand;
     ArrayList<ArrayList<HexSpace>> Board;
+
+    public GameState(){
+        activePlayer = 1;
+        isBeePlaced[0]=false;
+        isBeePlaced[1]=false;
+        turnNumber=1;
+        WhitesHand = new ArrayList<>();
+        BlacksHand = new ArrayList<>();
+        Board = new ArrayList<>();
+    }
 }
