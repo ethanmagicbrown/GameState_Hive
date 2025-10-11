@@ -54,8 +54,9 @@ public class GameState implements View.OnClickListener {
     }
     @Override
     public void onClick(View v) {
-        toString();
+
         GameState FirstInstance = new GameState();
+        FirstInstance.toString();
 
 
     }
