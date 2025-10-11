@@ -2,6 +2,7 @@ package com.hive.gamestatehive;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -54,6 +55,8 @@ public class GameState implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         toString();
+        GameState FirstInstance = new GameState();
+
 
     }
     //deep copy constructor

@@ -1,6 +1,7 @@
 package com.hive.gamestatehive;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         });*/
 
         EditText myView = findViewById(R.id.editText);
-        Button printButton = findViewById(R.id.button);
+        Button printButton = findViewById(R.id.Run);
         GameState control = new GameState();
         printButton.setOnClickListener(control);
 
